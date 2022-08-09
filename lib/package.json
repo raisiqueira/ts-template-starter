@@ -1,0 +1,26 @@
+{
+  "name": "lib",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "author": "Raí Siqueira <me@raisiqueira.io>",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src",
+    "dev": "tsup src --watch",
+    "test": "vitest",
+    "test:watch": "vitest watch",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "awesome-keywords"
+  ],
+  "devDependencies": {
+    "happy-dom": "^6.0.4"
+  }
+}
