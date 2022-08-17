@@ -1,4 +1,5 @@
 import { lib } from 'lib';
+import React from 'react';
 
 const Main = () => {
   return (
