@@ -10,6 +10,7 @@
 - [Size Limit](https://github.com/ai/size-limit) as a size limit plugin.
 - [Prettier](https://prettier.io/) as a code formatter.
 - [ESLint](https://eslint.org/) as a code linter.
+- [Turbo](https://turbo.build) as cacheable build tool.
 
 ## Using this repository
 
@@ -21,6 +22,15 @@
 - docs - An empty folder to store documentation.
 - example - A folder with an example project. Think as playground.
 - lib - A folder with a library.
+
+## Using Turbo to run commands
+
+Turbo is a cacheable build tool. This project uses it to run the `build`, `test` and `coverage` commands.
+
+```bash
+# Instead of running `pnpm build`, run:
+pnpx turbo build
+```
 
 ## License
 
