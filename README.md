@@ -1,6 +1,6 @@
 # pnpm-monorepo
 
-> A PNPM monorepo template to my personal projects.
+> A PNPM monorepo template for my personal projects.
 
 ## What is in this repository?
 
@@ -10,7 +10,8 @@
 - [Size Limit](https://github.com/ai/size-limit) as a size limit plugin.
 - [Prettier](https://prettier.io/) as a code formatter.
 - [ESLint](https://eslint.org/) as a code linter.
-- [Turbo](https://turbo.build) as cacheable build tool.
+- [NX](https://nx.dev) as cacheable operations.
+- [Changesets](https://github.com/changesets/changesets/) as a way to manage changes and releases.
 
 ## Using this repository
 
@@ -25,11 +26,11 @@
 
 ## Using Turbo to run commands
 
-Turbo is a cacheable build tool. This project uses it to run the `build`, `test` and `coverage` commands.
+NX is a cacheable build tool (and Monorepo manager). This project uses it to run the `build`, `test` and `coverage` commands.
 
 ```bash
 # Instead of running `pnpm build`, run:
-pnpx turbo build
+pnpm nx build lib
 ```
 
 ## License
