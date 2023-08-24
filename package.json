@@ -14,35 +14,37 @@
     "lint": "eslint ./lib",
     "lint:fix": "eslint ./lib ./example --fix",
     "type-check": "tsc --noEmit",
-    "project-graph": "nx graph"
+    "project-graph": "nx graph",
+    "ci:version": "changeset version",
+    "ci:publish": "changeset publish"
   },
   "description": "PNPM monorepo template",
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/config-conventional": "^17.6.5",
-    "@size-limit/preset-small-lib": "^8.2.4",
-    "@types/node": "^18.16.18",
-    "@typescript-eslint/eslint-plugin": "^5.59.11",
-    "@typescript-eslint/parser": "^5.59.11",
-    "commitlint": "^17.6.5",
-    "eslint": "^8.42.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-import-resolver-typescript": "^3.5.5",
-    "eslint-plugin-import": "^2.27.5",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@size-limit/preset-small-lib": "^8.2.6",
+    "@types/node": "^18.17.9",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "commitlint": "^17.7.1",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-import-resolver-typescript": "^3.6.0",
+    "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.2",
+    "lint-staged": "^13.3.0",
     "nx": "16.3.2",
     "prettier": "^2.8.8",
-    "size-limit": "^8.2.4",
-    "tsup": "^7.1.0",
+    "size-limit": "^8.2.6",
+    "tsup": "^7.2.0",
     "typescript": "^4.9.5",
-    "vite": "^4.3.9",
-    "vitest": "^0.32.0"
+    "vite": "^4.4.9",
+    "vitest": "^0.32.4"
   },
-  "packageManager": "pnpm@7.9.0",
+  "packageManager": "pnpm@8.6.0",
   "size-limit": [
     {
       "path": "./lib/dist/index.js",
@@ -52,5 +54,8 @@
       "path": "./lib/dist/index.mjs",
       "limit": "15 kb"
     }
-  ]
+  ],
+  "dependencies": {
+    "@changesets/cli": "^2.26.2"
+  }
 }
