@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "My Awesome lib",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Raí Siqueira <me@raisiqueira.io>",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
