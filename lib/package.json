@@ -22,7 +22,7 @@
     "awesome-keywords"
   ],
   "devDependencies": {
-    "@vitest/coverage-c8": "^0.24.5",
+    "@vitest/coverage-v8": "^0.34.2",
     "happy-dom": "^6.0.4"
   }
 }
