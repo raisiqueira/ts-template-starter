@@ -1,12 +1,16 @@
-import { lib } from 'lib';
-import React from 'react';
+import { lib } from 'lib'
+import React from 'react'
 
-const Main = () => {
+function Main() {
   return (
     <div>
-      <h1>Hello, awesome {lib()}! This is your playground.</h1>
+      <h1>
+        Hello, awesome
+        {lib()}
+        ! This is your playground.
+      </h1>
     </div>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main
