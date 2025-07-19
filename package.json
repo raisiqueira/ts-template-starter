@@ -16,8 +16,7 @@
     "type-check": "tsc --noEmit",
     "project-graph": "nx graph",
     "ci:version": "changeset version",
-    "ci:publish": "changeset publish",
-    "postinstall": "lefthook install"
+    "ci:publish": "changeset publish"
   },
   "description": "PNPM monorepo template",
   "license": "MIT",
