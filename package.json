@@ -1,6 +1,9 @@
 {
   "name": "pnpm-root",
   "private": true,
+  "packageManager": "pnpm@10.13.0",
+  "description": "PNPM monorepo template",
+  "license": "MIT",
   "scripts": {
     "build": "nx build lib",
     "build:fast": "pnpm -F lib build:fast",
@@ -18,10 +21,13 @@
     "ci:version": "changeset version",
     "ci:publish": "changeset publish"
   },
-  "description": "PNPM monorepo template",
-  "license": "MIT",
+  "dependencies": {
+    "@changesets/cli": "^2.29.5"
+  },
   "devDependencies": {
+    "@antfu/eslint-config": "^4.17.0",
     "@commitlint/config-conventional": "^19.8.1",
+    "@eslint-react/eslint-plugin": "^1.52.3",
     "@size-limit/preset-small-lib": "^11.2.0",
     "@types/node": "^24.0.15",
     "@typescript-eslint/eslint-plugin": "^8.37.0",
@@ -34,6 +40,7 @@
     "eslint-plugin-prettier": "^5.5.3",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
     "lefthook": "^1.12.2",
     "lint-staged": "^16.1.2",
     "nx": "21.3.0",
@@ -44,7 +51,6 @@
     "vite": "^7.0.5",
     "vitest": "^3.2.4"
   },
-  "packageManager": "pnpm@10.13.0",
   "size-limit": [
     {
       "path": "./lib/dist/index.js",
@@ -54,8 +60,5 @@
       "path": "./lib/dist/index.mjs",
       "limit": "15 kb"
     }
-  ],
-  "dependencies": {
-    "@changesets/cli": "^2.29.5"
-  }
+  ]
 }
