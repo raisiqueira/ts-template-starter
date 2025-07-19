@@ -23,7 +23,7 @@ jobs:
         run: npm install -g pnpm
 
       - name: Install deps and build (with cache)
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Lint
         run: npm run lint
