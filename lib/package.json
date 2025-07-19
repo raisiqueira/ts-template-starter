@@ -17,9 +17,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src -- --dts-resolve",
-    "build:fast": "tsup src",
-    "dev": "tsup src --watch",
+    "build": "tsdown src -- --dts-resolve",
+    "build:fast": "tsdown src",
+    "dev": "tsdown src --watch",
     "test": "vitest",
     "test:watch": "vitest watch",
     "coverage": "vitest run --coverage"
