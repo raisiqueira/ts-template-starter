@@ -24,7 +24,7 @@
 - example - A folder with an example project. Think as playground.
 - lib - A folder with a library.
 
-## Using Turbo to run commands
+## Using NX to run commands
 
 NX is a cacheable build tool (and Monorepo manager). This project uses it to run the `build`, `test` and `coverage` commands.
 
