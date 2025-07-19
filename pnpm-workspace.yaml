@@ -1,4 +1,10 @@
 packages:
-  - 'lib'
-  - 'docs'
-  - 'example'
+  - lib
+  - docs
+  - example
+
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - esbuild
+  - nx
+  - unrs-resolver

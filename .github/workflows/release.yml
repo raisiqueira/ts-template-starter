@@ -24,12 +24,12 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 8
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
-          node-version: 18
-          cache: 'pnpm'
+          node-version: 22
+          cache: pnpm
       - if: ${{ steps.cache-node.outputs.cache-hit != 'true' }}
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
       - run: pnpm run build
       - uses: changesets/action@v1
         if: ${{ github.event_name != 'pull_request' }}
